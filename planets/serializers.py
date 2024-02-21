@@ -17,7 +17,7 @@ class PlanetSerializer(serializers.HyperlinkedModelSerializer):
             "id",
             "highlight",
             "title",
-            "code",
+            "planet",
             "linenos",
             "language",
             "style",

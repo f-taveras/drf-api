@@ -5,7 +5,7 @@ from planets import views
 
 
 urlpatterns = [
-    path("planets/", views.PlanetList.as_view(), name="planet-list"),
+    path("api/v1/planets/", views.PlanetList.as_view(), name="planet-list"),
     path("planets/<int:pk>/", views.PlanetDetail.as_view(), name="planet-detail"),
     path(
         "planets/<int:pk>/highlight/", 

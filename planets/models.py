@@ -14,7 +14,7 @@ STYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])
 class Planet(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     title = models.CharField(max_length=100, blank=True, default="")
-    code = models.TextField()
+    planet = models.CharField()
     linenos = models.BooleanField(default="python", max_length=100)
     language = models.CharField(choices=LANGUAGE_CHOICES, default='python', max_length=100)
     style = models.CharField(choices=STYLE_CHOICES, default="friendly", max_length=100)
@@ -38,7 +38,7 @@ class Planet(models.Model):
         formatter = HtmlFormatter(
             style=self.style, linenos=linenos, full=True, **options
         )
-        self.highlighted = highlight(self.code, lexer, formatter)
+        self.highlighted = highlight(self.planet, lexer, formatter)
         super(Planet, self).save(*args, **kwargs)
 
     def __str__(self):
