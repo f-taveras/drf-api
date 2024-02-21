@@ -1,4 +1,4 @@
-# LAB - Class 31
+# LAB - Class 31/32
 ## Project: Django REST Framework & Docker Overview
 ### Author: Felix A. Taveras
 ### Links and Resources
