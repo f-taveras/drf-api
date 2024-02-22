@@ -1,10 +1,11 @@
-# LAB - Class 31/32
+# LAB - Class 31/32/33
 ## Project: Django REST Framework & Docker Overview
 ### Author: Felix A. Taveras
 ### Links and Resources
 
 * [REST Framework Tutorial](https://learndjango.com/tutorials/official-django-rest-framework-tutorial-beginners)
 * [Install Docker - Ubuntu](https://www.howtogeek.com/devops/how-to-install-and-get-started-with-docker-desktop-on-linux/)
+* [simplejwt instructions](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/getting_started.html)
 
 __Setup no docker:__
 
@@ -24,7 +25,14 @@ How to initialize/run your application (where applicable)
 
 __Setup using Docker:__
 
-* make sure to install __docker compose__(see resources)
+make sure to install __docker compose__(see resources)
     
         docker compose build
         docker compose up
+
+
+#### Manual testing
+
+* ThunderClient
+
+![Tests](./assets/tests.png)
